@@ -20,7 +20,6 @@ print("\n- - - - - - - - - - - - - - - - -")
 print("    Initialisation")
 Path_recherche = input("    Enter path link : ")
 pays = input("    Enter country : ")
-Path_recherche = "https://www.linkedin.com/jobs/search/?currentJobId=3969027737&f_TPR=r86400&geoId=103644278&keywords=cybersecurity&location=%C3%89tats-Unis&origin=JOB_SEARCH_PAGE_JOB_FILTER&refresh=true"
 print("- - - - - - - - - - - - - - - - -")
 
 
@@ -34,7 +33,7 @@ options.add_argument("--single-process")
 #options.add_argument("--disable-gpu")
 #options.add_argument("--no-sandbox")
 options.add_experimental_option("detach", True)
-s = Service("/Users/julienpierrel/Desktop/Scraping_Lkdn/chromedriver") #the path of your chromedriver
+s = Service("YOUR PATH") #the path of your chromedriver
 driver = webdriver.Chrome(service=s, options=options)
 
 
